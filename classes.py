@@ -4,7 +4,6 @@ class Rua:
         self.comprimento = comprimento  # metros
         self.velocidade_maxima = velocidade_maxima  # km/h
 
-
 class PontoOnibus:
     def __init__(self, nome: str, rua: Rua, posicao: int, tempo_parada: float):
         self.nome = nome
@@ -25,7 +24,6 @@ class Linha:
     def adicionar_ponto(self, ponto):
         self.pontos.append(ponto)
 
-
 class Onibus:
     def __init__(self, identificacao: int, linha: Linha):
         self.identificacao = identificacao
@@ -36,7 +34,6 @@ class Onibus:
         self.velocidade_atual = 0  # km/h
         self.atraso = 0  # segundos
         self.estado = "parado"
-
 
 class Simulador:
     def __init__(self):
